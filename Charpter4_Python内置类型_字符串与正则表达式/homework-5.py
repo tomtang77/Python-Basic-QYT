@@ -10,7 +10,7 @@ IP地址    : 192.168.189.254
 import re
 a = '接口'
 b = 'IP地址'
-c = 'status'
+c = '狀態'
 str1 = 'Port-channel1.189   192.168.189.254 YES CONFIG  up  up '
 
 #po = re.match('\D+\d+((/\d+)+(\.\d+)?)?', str1)
@@ -21,6 +21,6 @@ print(po)
 print('-'*80)
 print(f'{a:<7}: {po[0]:<10}')
 print(f'{b:<7}: {po[1]:<10}')
-print(f'{c:<8}: {po[-1]:<10}')
+print(f'{c:<7}: {po[-1]:<10}')
 
 
