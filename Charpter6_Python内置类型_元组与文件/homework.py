@@ -32,7 +32,9 @@ for x in str2:
     key = (result[0], result[1], result[2], result[3])
     value = (result[4], result[5])
     d1[key] = value
-
+print('打印字典\n')
 print(d1)
+
+print('\n\n打印格式化輸出\n')
 
 
