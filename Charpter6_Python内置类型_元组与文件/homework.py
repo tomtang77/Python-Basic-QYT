@@ -37,4 +37,9 @@ print(d1)
 
 print('\n\n打印格式化輸出\n')
 
+for key, value in d1.items():
+    print("="*150)
+    print(f'{"src :":>15}{key[0]:<25}' '|' f'{"src_p :":>15}{key[1]:<15}' '|' f'{"dst :":>15}{key[2]:<15}' '|' f'{"dst_p :":>15}{key[3]:<15}')
+    print(f'{"bytes :":>15}{value[0]:<25}' '|' f'{"flags :":>15}{value[1]:<15}')
+    print("="*150)
 
