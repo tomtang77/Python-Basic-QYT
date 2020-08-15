@@ -12,15 +12,15 @@ import os
 route_n_result = os.popen("route -n").read()
 #print(route_n_result)
 
-route_n_result_list = route_n_result.split('\n')
-
-#print(route_n_result_list)
-
-route_n_result_list = route_n_result_list[2:-1]
-
-#print(route_n_result_list)
-
-for x in route_n_result_list:
-    if x.split()[3] == 'UG':
-        print('网关为:' + x.split()[1])
+# route_n_result_list = route_n_result.split('\n')
+#
+# #print(route_n_result_list)
+#
+# route_n_result_list = route_n_result_list[2:-1]
+#
+# #print(route_n_result_list)
+#
+# for x in route_n_result_list:
+#     if x.split()[3] == 'UG':
+#         print('网关为:' + x.split()[1])
 
